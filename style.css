@@ -1,0 +1,17 @@
+#visibility::-webkit-scrollbar{
+    background: transparent;
+}
+
+#slide-container{
+    transition: 2s;
+}
+
+
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <!--Mystyle Sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Link Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Popup Section-->
+    <section
+      class="bg-gray-900 text-white flex justify-around z-0"
+      id="popup-section"
+    >
+      <p class="p-2 md:text-xl">
+        Sign Up and <b>GET 20% OFFER</b> for your first order
+      </p>
+      <p class="p-2 md:text-xl font-bold cursor-pointer" id="popup">X</p>
+    </section>
+
+    <!--navbar section-->
+    <section
+      class="flex justify-between bg-white items-center z-20 sticky top-0"
+    >
+      <h1 class="text-2xl lg:text-3xl font-bold m-4">Nostra</h1>
+      <ul class="md:flex md:gap-10 md:p-5 hidden">
+        <li><a href="./index.html" class="md:text-md lg:text-lg">Home</a></li>
+        <li>
+          <a href="#newsrrivals" class="md:text-md lg:text-lg">New Arrival</a>
+        </li>
+        <li>
+          <a href="#mostwanted" class="md:text-md lg:text-lg">Most Wanted</a>
+        </li>
+        <li><a href="./colloction.html" class="md:text-md lg:text-lg">Colloctions</a></li>
+        <li><a href="./contacts.html" class="md:text-md lg:text-lg">Contact Us</a></li>
+      </ul>
+      <svg
+        id="toggle-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 md:hidden m-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </section>
+
+    <!--Hide navabr-->
+
+    <section
+      class="w-3/6 h-screen fixed top-0 -left-1/2 bg-gray-900 z-20 transform duration-1000"
+      id="hide-icon"
+    >
+      <p
+        class="text-right p-5 text-white font-bold cursor-pointer"
+        id="hide-nav"
+      >
+        X
+      </p>
+      <ul class="ml-5 flex flex-col gap-10">
+        <li><a href="./index.html" class="text-xl text-white">Home</a></li>
+        <li>
+          <a href="#newsrrivals" class="text-xl text-white">New Arrival</a>
+        </li>
+        <li>
+          <a href="#mostwanted" class="text-xl text-white">Most Wanted</a>
+        </li>
+        <li><a href="./colloction.html" class="text-xl text-white">Colloctions</a></li>
+        <li><a href="./contacts.html" class="text-xl text-white">Contact Us</a></li>
+      </ul>
+    </section>
+
+    <!--Collection section-->
+
+    <section class="flex">
+        <div class="flex w-1/4 md:w-1/2 lg:w-1/2">
+          <div class="ml-5 lg:ml-10  mt-20">
+          <div class="mt-5">
+            <h1 class="font-bold md:text-2xl lg:text-3xl">Occasion</h1>
+            <div class="mt-3">
+            <input type="checkbox" value="summer" name="tags">
+            <label for="summer" class="text-xs md:text-lg lg:text-2xl">Summer</label><br>
+            <input type="checkbox" value="party" name="tags">
+            <label for="party" class="text-xs md:text-lg lg:text-2xl">Party</label><br>
+            <input type="checkbox" value="beach" name="tags">
+            <label for="beach" class="text-xs md:text-lg lg:text-2xl">Beach</label>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="font-bold md:text-2xl lg:text-3xl" >Colors</h1>
+            <div class="mt-3">
+            <input type="checkbox" value="red" name="tags">
+            <label for="red" class="text-xs md:text-lg lg:text-2xl">Red</label><br>
+            <input type="checkbox" value="blue" name="tags">
+            <label for="blue" class="text-xs md:text-lg lg:text-2xl">Blue</label><br>
+            <input type="checkbox" value="white" name="tags">
+            <label for="white" class="text-xs md:text-lg lg:text-2xl">White</label><br>
+            <input type="checkbox" value="green" name="tags">
+            <label for="green" class="text-xs md:text-lg lg:text-2xl">Green</label>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="font-bold md:text-2xl lg:text-3xl">Arrivals</h1>
+            <div class="mt-3">
+            <input type="checkbox" value="new" name="tags">
+            <label for="new" class="text-xs md:text-lg lg:text-2xl">New</label><br>
+            <input type="checkbox" value="old" name="tags">
+            <label for="old" class="text-xs md:text-lg lg:text-2xl">Old</label>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-black ml-5 mt-5 md:ml-10 lg:ml-24"></div>
+        </div>
+        <div class="m-5">
+          <div class="border-2 border-black w-full rounded-md px-2 py-2 mx-auto flex justify-between items-center">
+            <input type="text" class="outline-none w-full" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+          </div>
+          <div class="grid grid-cols-3 gap-5 mt-5">
+            <div>
+              <img src="./img/products/f1.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Floral Summer Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹220</p>
+            </div>
+            <div>
+              <img src="./img/products/f2.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Summer Green</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹260</p>
+            </div>
+            <div>
+              <img src="./img/products/f3.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Party Floral Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹399</p>
+            </div>
+            <div>
+              <img src="./img/products/f4.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Floral Summer Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹399</p>
+            </div>
+            <div>
+              <img src="./img/products/f5.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Beach Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹579</p>
+            </div>
+            <div>
+              <img src="./img/products/f6.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Shirt Party Red</h1>
+              <p class="text-xs md:text-md lg:text-lg" >₹579</p>
+            </div>
+            <div>
+              <img src="./img/products/f3.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Party Floral Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹399</p>
+            </div>
+            <div>
+              <img src="./img/products/f6.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Shirt Party Red</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹579</p>
+            </div>
+            <div>
+              <img src="./img/products/f1.jpg" alt="">
+              <h1 class="text-xs md:text-lg lg:text-xl font-bold">Floral Summer Shirt</h1>
+              <p class="text-xs md:text-md lg:text-lg">₹220</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--input-section-->
+    <section class="text-center p-5">
+      <h4 class="font-bold md:text-3xl">Join our News Letter</h4>
+      <p class="text-xs md:text-xl">
+        Signup for our email newspaper to get exclusive discounts, updates, and
+        more
+      </p>
+      <input
+        type="text"
+        class="border-black block mx-auto mt-4 w-4/5 p-2 border-2"
+      />
+      <a
+        href="#"
+        class="mt-3 block bg-black text-white w-fit mx-auto px-3 py-2 text-xs md:text-2xl rounded-md"
+        >Subscribe <i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-black p-10">
+      <h1 class="text-white text-md font-bold md:text-3xl">Nostra</h1>
+      <h3 class="text-white mt-2 text-sm md:text-2xl">
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+        below for those interest
+      </h3>
+      <div class="flex gap-5 mt-4">
+        <img
+          src="./img/social midea/telegram.png"
+          class="w-8 text-white"
+          alt=""
+        />
+        <img src="./img/social midea/youtube.png" class="w-8" alt="" />
+        <img src="./img/social midea/social.png" class="w-8" alt="" />
+      </div>
+      <p class="text-white mt-2 text-sm md:text-2xl">@ 2023 Nostra.com</p>
+    </section>
+    <script src="./collection.js"></script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <!--Mystyle Sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Link Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Popup Section-->
+    <section
+      class="bg-gray-900 text-white flex justify-around z-0"
+      id="popup-section"
+    >
+      <p class="p-2 md:text-xl">
+        Sign Up and <b>GET 20% OFFER</b> for your first order
+      </p>
+      <p class="p-2 md:text-xl font-bold cursor-pointer" id="popup">X</p>
+    </section>
+
+    <!--navbar section-->
+    <section class="flex justify-between bg-white items-center z-20  sticky top-0">
+      <h1 class="text-2xl font-bold m-4">Nostra</h1>
+      <ul class="md:flex md:gap-10 md:p-5 hidden">
+        <li><a href="./index.html" class="md:text-md lg:text-lg">Home</a></li>
+        <li><a href="#newsrrivals" class="md:text-md lg:text-lg">New Arrival</a></li>
+        <li><a href="#mostwanted" class="md:text-md lg:text-lg">Most Wanted</a></li>
+        <li><a href="./colloction.html" class="md:text-md lg:text-lg">Colloctions</a></li>
+        <li><a href="./contacts.html" class="md:text-md lg:text-lg">Contact Us</a></li>
+      </ul>
+      <svg
+        id="toggle-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 md:hidden m-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </section>
+
+    <!--Hide navabr-->
+
+    <section
+      class="w-3/6 h-screen fixed top-0 -left-1/2 bg-gray-900 z-20 transform duration-1000"
+      id="hide-icon"
+    >
+      <p
+        class="text-right p-5 text-white font-bold cursor-pointer"
+        id="hide-nav"
+      >
+        X
+      </p>
+      <ul class="ml-5 flex flex-col gap-10">
+        <li><a href="./index.html" class="text-xl text-white">Home</a></li>
+        <li><a href="#newsrrivals" class="text-xl text-white">New Arrival</a></li>
+        <li><a href="#mostwanted" class="text-xl text-white">Most Wanted</a></li>
+        <li><a href="./colloction.html" class="text-xl text-white">Colloctions</a></li>
+        <li><a href="./contacts.html" class="text-xl text-white">Contact Us</a></li>
+      </ul>
+    </section>
+    <!--image-content-->
+    <section
+      class="flex w-full relative items-center overflow-hidden mt-4"
+    >
+    <div class="flex justify-center max-w-full items-center absolute left-10 right-10">
+        <i id="slider-left-activate" class="fa-solid fa-angle-left md:text-5xl text-4xl cursor-pointer" style="color: #ffffff;"></i>
+      <div>
+        <h1 class="text-white font-bold text-2xl md:text-5xl lg:text-6xl text-center">
+          Level up your style with our
+        </h1>
+        <h4 class="text-white font-bold text-xl md:text-2xl lg:text-3xl text-center mt-4">
+          Summer Collections
+        </h4>
+        <button'
+          class="bg-white p-2 lg:py-3 lg:px-4 flex items-center gap-3 mt-5 w-fit text-center mx-auto px-3" 
+        >
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+        <i id="slider-right-activate" class="fa-solid fa-angle-right  md:text-6xl text-4xl cursor-pointer" style="color: #ffffff;"></i>
+    </div>
+      <div class="flex md:h-96" id="slide-container">
+        <img class="slide-image w-svw" src="img/others/slider-two.jpg" alt="" />
+        <img class="slide-image w-svw" src="img/others/slider-one.jpg" alt="" />
+        <img class="slide-image w-svw" src="./img/others/slider-two.jpg" alt="" />
+      </div>
+
+    </section>
+    
+    <!--Brands-->
+
+    <section class="m-5">
+      <h1 class="font-bold text-2xl">Brands</h1>
+      <div class="flex justify-between mt-5">
+        <div>
+          <img src="./img/icons/puma.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Puma</small>
+        </div>
+        <div>
+          <img src="./img/icons/adidas.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Adidas</small>
+        </div>
+        <div>
+          <img src="./img/icons/simple.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Simple</small>
+        </div>
+        <div>
+          <img src="./img/icons/leaves.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Leaves</small>
+        </div>
+        <div>
+          <img src="./img/icons/behance.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Behance</small>
+        </div>
+        <div>
+          <img src="./img/icons/twitch.png" class="w-8 md:w-16" alt="" />
+          <small class="lg:text-xl text-sm md:font-bold text-center">Twitch</small>
+        </div>
+        <div>
+          <img src="./img/icons/nike.png" class="w-8 md:w-16" alt="" />
+          <small  class="lg:text-xl text-sm md:font-bold text-center">Nike</small>
+        </div>
+      </div>
+    </section>
+
+    <!--Content-section-->
+
+    <section class="m-5">
+      <div class="flex justify-between mt-10">
+        <div>
+          <small class="font-bold text-base md:text-xl lg:text-2xl">We Provide Best</small>
+          <small class="font-bold text-base md:text-xl lg:text-2xl">Customer Experience</small>
+        </div>
+        <div>
+          <small class="lg:text-2xl md:text-lg"
+            >|| We ensure that are our cutomer have the best shopping
+            experience</small
+          >
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-2 mt-10">
+        <div class="bg-gray-400 md:p-5">
+          <i
+            style="font-size: 3vw; margin-bottom: 10px"
+            class="fa-regular fa-circle-check m-2"
+          ></i>
+          <h4 class="text-xs md:text-lg lg:text-xl font-bold m-2">
+            Original Products
+          </h4>
+          <p class="m-2 text-xs md:text-lg lg:text-2xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            consequuntur.
+          </p>
+        </div>
+        <div class="bg-gray-400 md:p-5">
+          <i
+            style="font-size: 3vw; margin-bottom: 10px"
+            class="fa-regular fa-face-smile m-2"
+          ></i>
+          <h4 class="text-xs md:text-lg lg:text-xl font-bold m-2">
+            Satisfaction Guarantee
+          </h4>
+          <p class="m-2 text-xs md:text-lg lg:text-2xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            consequuntur.
+          </p>
+        </div>
+        <div class="bg-gray-400 md:p-5">
+          <i
+            style="font-size: 3vw; margin-bottom: 10px"
+            class="fa-solid fa-broom m-2"
+          ></i>
+          <h4 class="m-2 text-xs md:text-lg lg:text-xl font-bold">
+            New Arrival Everyday
+          </h4>
+          <p class="m-2 text-xs md:text-lg lg:text-2xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            consequuntur.
+          </p>
+        </div>
+        <div class="bg-gray-400 md:p-5">
+          <i
+            style="font-size: 3vw; margin-bottom: 10px"
+            class="fa-solid fa-truck-fast m-2"
+          ></i>
+          <h4 class="text-xs md:text-lg lg:text-xl font-bold m-2">
+            Fast & Free Shipping
+          </h4>
+          <p class="m-2 text-xs md:text-lg lg:text-2xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            consequuntur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--New Arrivals-->
+
+    <section class="m-5" id="newsrrivals">
+      <div>
+        <h1 class="font-bold text-2xl">New Arrivals</h1>
+      </div>
+      <div class="grid grid-cols-4 gap-2 mt-5">
+        <div class="relative">
+          <img src="./img/products/f1.jpg" class="opacity-80" alt="" />
+          <div class="absolute top-16 left-2 md:top-3/4 md:left-1/3">
+            <a
+              href="#"
+              class="px-2 py-1 md:px-3 md:py-2 rounded-md md:text-sm bg-black text-white flex items-center justify-center z-20 text-xs"
+              >Shop Now<i class="fa-solid fa-arrow-right text-xs md:text-sm ml-2 mt-1"></i
+            ></a>
+          </div>  
+        </div>
+        <div class="relative">
+          <img src="./img/products/f2.jpg" class="opacity-80" alt="" />
+          <div class="absolute top-16 left-2 md:top-3/4 md:left-1/3">
+            <a
+              href="#"
+              class="px-2 py-1 md:px-3 md:py-2 rounded-md md:text-sm bg-black text-white flex items-center justify-center z-20 text-xs"
+              >Shop Now<i class="fa-solid fa-arrow-right text-xs md:text-sm ml-2 mt-1"></i
+            ></a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="./img/products/f3.jpg" class="opacity-80" alt="" />
+          <div class="absolute top-16 left-2 md:top-3/4 md:left-1/3">
+            <a
+              href="#"
+              class="px-2 py-1 md:px-3 md:py-2 rounded-md md:text-sm bg-black text-white flex items-center justify-center z-20 text-xs"
+              >Shop Now<i class="fa-solid fa-arrow-right text-xs md:text-sm ml-2 mt-1"></i
+            ></a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="./img/products/f4.jpg" class="opacity-80" alt="" />
+          <div class="absolute top-16 left-2 md:top-3/4 md:left-1/3">
+            <a
+              href="#"
+              class="px-2 py-1 md:px-3 md:py-2 rounded-md md:text-sm bg-black text-white flex items-center justify-center z-20 text-xs"
+              >Shop Now<i class="fa-solid fa-arrow-right text-xs md:text-sm ml-2 mt-1"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Most Wanted-->
+    <section class="m-5 " id="mostwanted">
+      <h class="font-bold text-2xl">Most Wanted</h1>
+      <div class="mt-10 flex overflow-x-scroll no-scrollbar transpar gap-5" id="wanted-container">
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/n5.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4  absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/n2.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/f3.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/n3.jpg " alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/n4.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/f6.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/f7.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+        <div class="relative Container min-w-24 md:min-w-60">
+          <img src="./img/products/f8.jpg" alt="">
+          <p class="absolute top-0 text-white bg-red-600 py-1 px-2 md:text-lg md:px-4 mt-2 ml-2 rounded-md text-xs font-light">sale</p>
+          <img src="./img/icons/blackheart.png" class="w-4 absolute right-2 md:top-52 top-20 like-buttons" alt=""> 
+        </div>
+      </div>
+    </section>
+
+    <!--Offer section-->
+    <section class="bg-black m-5 flex">
+      <img src="./img/others/offer.jpg" class="py-5 px-3 w-72 md:w-1/2 h-52 md:h-1/2" alt="">
+      <div class="p-3 flex flex-col justify-center">
+        <h1 class="text-white text-xl font-bold mt-2 md:text-6xl">Limited Offer</h1>
+        <p class="text-white mt-2 md:text-3xl md:font-bold">35% OFF on this for the first 30 Customers</p>
+        <a
+        href="#"
+        class="px-2 py-1 md:px-4 md:py-2 rounded-md bg-white text-b flex items-center justify-center z-20 text-xs md:text-xl mt-2 w-fit"
+        >Shop Now<i class="fa-solid fa-arrow-right text-xs md:text-sm ml-2 mt-1"></i
+      ></a>
+      </div>
+    </section>
+
+    <!--input-section-->
+    <section class=" text-center p-5">
+      <h4 class="font-bold md:text-3xl">Join our News Letter</h4>
+      <p class="text-xs md:text-xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+      <input type="text" class="border-black block mx-auto mt-4 w-4/5 p-2  border-2">
+      <a href="#" class="mt-3 block bg-black text-white w-fit mx-auto px-3 py-2 text-xs md:text-2xl rounded-md">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-black p-10">
+      <h1 class="text-white text-md font-bold md:text-3xl">Nostra</h1>
+      <h3 class="text-white mt-2 text-sm md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h3>
+      <div class="flex gap-5 mt-4">
+        <img src="./img/social midea/telegram.png" class="w-8 text-white" alt="">
+        <img src="./img/social midea/youtube.png" class="w-8" alt="">
+        <img src="./img/social midea/social.png" class="w-8" alt="">
+      </div>
+      <p class="text-white mt-2 text-sm md:text-2xl">@ 2023 Nostra.com</p>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
