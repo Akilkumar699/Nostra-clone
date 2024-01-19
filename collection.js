@@ -20,16 +20,21 @@ hidenav.addEventListener('click',function(){
     hideicon.style.left="-50%"
 })
 
-//Check box
+// //Search
 
-// var tags=document.getElementsByName('tags')
+// var Search=document.getElementById("search")
+// var container=document.getElementById("container")
+// var list=document.querySelectorAll(".list")
+// console.log(list)
 
-// console.log(tags)
-
-// for(i=0;i<tags.length;i++){
-//     tags[i].addEventListener('click',function(){
-//         if(event.target.checked){
-//             if(event.target.value)
+// Search.addEventListener("keyup",function(){
+//     validate=this.target.value.toUpperCase();
+//     for(i=0;i<list.length;i++){
+//         if(list[i].textContent.toUpperCase().indexOf(validate)<0){
+//             list[i].style.display="none"
 //         }
-//     })
-// }
+//         else{
+//             list[i].style.display="block"
+//         }
+//     }
+// })

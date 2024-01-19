@@ -36,7 +36,7 @@ sliderrightactivate.addEventListener('click',function(){
     slideincrement=slideincrement+100;
     if(slideincrement>200){
         slideincrement=0
-        slideimage.style.marginLeft=0
+        slideimage.style.marginLeft=slideincrement
     }
     else{
 

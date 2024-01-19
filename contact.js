@@ -19,3 +19,6 @@ toggleicon.addEventListener('click',function(){
 hidenav.addEventListener('click',function(){
     hideicon.style.left="-50%"
 })
+
+
+
